@@ -10,6 +10,7 @@ body{
     padding: 20px 40px 20px 40px;
     box-shadow: 0px 0px 4px 0 grey;
     text-align:left;
+    margin: 0 auto;
     }
 .line{
     border-bottom: 1px solid gray;
