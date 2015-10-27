@@ -1,0 +1,132 @@
+
+body{
+    font-family: sans-serif;
+}
+
+
+.form{
+    width:1000px;
+    margin: 0 auto;
+    box-shadow: 0px 0px 4px 0 grey;
+    height: 915px;
+}
+
+
+.main_menu,
+.store,
+footer{
+    margin-left: 35px;
+}
+
+
+/*Header*/
+.logo{
+    font-family: "Verdana";
+    font-size: 45px;
+    margin: 0 0 30px 30px;
+    padding-top: 35px;
+}
+.main_menu{
+    width:924px;
+}
+.main_menu ul{
+    font-size: 0;
+}
+.main_li{
+    width:100px;
+    padding:12px;
+    background: linear-gradient(to top, #444343,#5e5e5e);
+    color: white;
+    font-size: 16px;
+    display:inline-block;
+    padding-left:40px;
+}
+.main_li:first-child{
+    padding-left:25px;
+}
+.main_li:last-child{
+    width:427px;
+}
+/*.main_li:nth-child(2){
+    border-left: 2px solid #787878;
+    border-right: 2px solid #787878;
+    padding-right:0;
+    background: linear-gradient(to top, #2e2e2e,#383838);
+}
+*/
+   .main_li:hover{
+    border-left: 2px solid #787878;
+    border-right: 2px solid #787878;
+    background: linear-gradient(to top, #2e2e2e,#383838);
+}
+/*Store*/
+
+.main_store{
+    
+}
+.store{
+    margin-top:35px;
+    border: 1px solid #D8D8D8;
+    width:205px;
+    float:left;
+}
+.store_li{
+    display:block;
+    background-color: white;
+    border-top: 1px solid #D8D8D8;
+    padding: 12px;
+    color: black;
+    font-size: 13px;
+    padding-left:20px;
+    color: darkgrey;
+    }
+.store_li:first-child{
+    border-top: none;
+}
+
+.store_li:hover{
+    background-color:whitesmoke;
+    padding-left:35px;
+    color: black;
+}
+
+/*Content*/
+img{
+     margin-left: 39px;
+    margin-top: 34px;
+    border-left: 1px solid #D8D8D8;
+}
+.img_text{
+    width:630px;
+    height: auto;
+    margin: 35px 0 55px 310px;
+    font-size: 12px;
+    color: #404040;
+    line-height: 2;
+}
+
+
+
+/*Footer*/
+footer{
+    padding: 12px;
+    color: black;
+    background-color: lightgray;
+    width:900px;
+    font-size: 13px;
+    
+}
+.footer_li{
+    display:inline-block;
+    padding-left:80px;
+}
+.footer_li:first-child{
+    padding-left: 10px;
+}
+.footer_li:hover{
+text-decoration: underline;
+}
+.footer_li:last-child{
+    padding-left:285px;
+    text-decoration: none;
+}
