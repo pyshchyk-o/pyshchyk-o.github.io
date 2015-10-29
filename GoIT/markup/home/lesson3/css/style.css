@@ -43,12 +43,15 @@ footer{
     float: left;
 }
 .main_menu li a{
-    padding:0 26px 0 26px;
+    padding:0 36px 0 36px;
     color:white;
     text-decoration: none;
     display: block;
     line-height: 40px;
     font-size: 15px;
+}
+.main_menu li a:first-child{
+    padding-left: 25px;
 }
 .main_menu li:hover{
     border-left: 1px solid inherit;
@@ -86,18 +89,18 @@ footer{
     
 }
 /*content*/
-.content_img{
+.content{
     float:right;
-    margin: 35px 41px 0 0;
+    width: 678px;
+    margin: 35px 40px 0 0;
 }
 .content_text{
-    float:right;
-    font-size:15px;
-    color:#2c2c2c;
-    width:640px;
-    height: auto;
+    background: white;
+    font-size: 13px;
+    color: #2c2c2c;
     line-height: normal;
-    margin:40px 55px 60px 0;
+    margin: 35px 0 45px 0;
+    padding: 0 20px 0 20px;
 }
 
 /*Footer*/
@@ -111,20 +114,25 @@ footer{
 .footer_menu li{
     float:left;
 }
+
 .footer_menu li a{
     text-decoration: none;
-    color: black;
-    padding:0 35px 0 35px;
+    display: block;
+    color: #2c2c2c;
+    margin:0 35px 0 35px;
     line-height: 40px;
     font-size: 13px;
     }
 .footer_menu li a:hover{
     text-decoration: underline;
 }
+.footer_menu li a:first-child{
+    margin-left: 25px;
+}
 .copy{
     padding-right: 25px;
     float:right;
-    color: black;
+    color: #2c2c2c;
     line-height: 40px;
     font-size: 13px;
 }
