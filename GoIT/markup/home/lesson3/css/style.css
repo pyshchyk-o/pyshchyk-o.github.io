@@ -41,7 +41,7 @@ footer{
 
 .main_menu li{
     float: left;
-}
+    }
 .main_menu li a{
     padding:0 36px 0 36px;
     color:white;
@@ -49,17 +49,14 @@ footer{
     display: block;
     line-height: 40px;
     font-size: 15px;
+    
 }
-.main_menu li a:first-child{
-    padding-left: 25px;
-}
-.main_menu li:hover{
-    border-left: 1px solid inherit;
-    border-right: 1px solid inherit;
+.main_menu li a:hover{
+    padding: 0 35px 0 35px;
+    border-left: 1px solid #838383;
+    border-right: 1px solid #838383;
     background: linear-gradient(to top, #2e2e2e,#383838);
 }
-
-
 /*Container*/
 
 .store{
@@ -114,7 +111,9 @@ footer{
 .footer_menu li{
     float:left;
 }
-
+.footer_menu ul{
+    float:left;
+}
 .footer_menu li a{
     text-decoration: none;
     display: block;
