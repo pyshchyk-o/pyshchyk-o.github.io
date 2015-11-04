@@ -5,8 +5,8 @@
 body{
     
    font-family: Verdana;
-   background: url(../img/1.jpg) no-repeat;
-   background-size: cover;
+   background: url(../img/1.jpg);
+   /*background-size: cover;*/
     }
     
 .form{
@@ -25,8 +25,6 @@ body{
 /*HEADER*/
 
 .header{
-    width: 950px;
-    height: 200px;
     background-color: white;
     position: relative;
 }
@@ -34,7 +32,7 @@ body{
 .contacts{
     width: 150px;
     float:right;
-    margin: 10px 10px 0 0;
+    margin: 15px 10px 0 0;
 }
 .contacts span:first-child{
     font-weight: 600;
@@ -56,14 +54,13 @@ body{
 }
 .logo img{
     height: 185px;
-   margin:15px 0 0 30px;
+   margin:28px 0 0 30px;
 }
    /*COUNTRIES MENU*/
 
 .countries{
   float: right;
-    width: 500px;
-    margin: 35px 15px 0 0;
+    margin: 35px 15px 22px 0;
     }
 .countries ul{
   float: right;
@@ -104,44 +101,39 @@ body{
 }
 .menu ul li{
     float:left;
-    height: 15px;
-    margin: 15px 15px 10px 30px;
+    padding: 0 15px 0 35px;
     position:relative;
     z-index:1;
-    padding:0 5px;
-    color:white;
-    font-size: 14px;
+    line-height: 40px;
     cursor: pointer;
      }
-.menu ul li ul{
+.menu ul li a{
+    text-decoration: none;
+    font-size: 14px;
+    color: white;
+}
+.menu ul li .submenu{
     display:none;
     position: absolute;
-    left: -15px;
-    top:26px;
-    margin:0;
-    width: 162px;
+    left: 0;
+    top:42px;
+    width: 160px;
     background-color: #333333;
     box-shadow: -1px 5px 10px 0 #6e6e6e;
     
 }
-.menu ul li .offers{
-    width: 120px;
-}
 .menu ul li ul li{
     float: none;
     display:block;
-    margin-top: 10px;
-    
-    }
-.menu ul li:hover ul{
+    line-height: 28px;
+    padding-left:20px;    }
+.menu ul li:hover .submenu{
     display:block;
 }
  
      /*Content*/
 
 .content{
-    width: 950px;
-    overflow: hidden;
     font-size: 13px;
     line-height: 20px;
 }
@@ -151,8 +143,7 @@ body{
     float:left;
     background-color: #edeef0;
     padding: 10px 20px 20px 20px;
-    padding-bottom: 2000px;
-    margin-bottom: -2000px;
+    height: 440px;
     border-right: 1px solid #c7cacf;
 }
 
@@ -161,8 +152,6 @@ body{
     float:right;
     background-color: #edeef0;
     padding: 10px 20px 20px 20px;
-    padding-bottom: 2000px;
-    margin-bottom: -2000px;
     border-left: 1px solid #c7cacf;
 }
 .content h2{
@@ -179,8 +168,7 @@ body{
 
 .footer{
     display: block;
-    margin: 0 auto;
-    width: 200px;
+    text-align: center;
     font-size: 13px;
     line-height: 40px;
     color: #dee7ee;
