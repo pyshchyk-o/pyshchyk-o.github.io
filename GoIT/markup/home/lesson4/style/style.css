@@ -6,6 +6,7 @@ body{
     
    font-family: Verdana;
    background: url(../img/1.jpg);
+    font-size: 14px;
    /*background-size: cover;*/
     }
     
@@ -67,7 +68,7 @@ body{
 }
 .countries li{
     display: inline-block;
-    width:74px;
+    width:73px;
     color: #128aa7;
     font-size: 12px;
     text-align: center;
@@ -101,13 +102,14 @@ body{
 }
 .menu ul li{
     float:left;
-    padding: 0 15px 0 35px;
     position:relative;
     z-index:1;
     line-height: 40px;
     cursor: pointer;
      }
 .menu ul li a{
+    display: block;
+    padding: 0 26px;
     text-decoration: none;
     font-size: 14px;
     color: white;
@@ -116,17 +118,17 @@ body{
     display:none;
     position: absolute;
     left: 0;
-    top:42px;
+    top:41px;
     width: 160px;
     background-color: #333333;
-    box-shadow: -1px 5px 10px 0 #6e6e6e;
-    
+    box-shadow: -1px 5px 10px 0 #6e6e6e; 
 }
+
 .menu ul li ul li{
     float: none;
     display:block;
     line-height: 28px;
-    padding-left:20px;    }
+}
 .menu ul li:hover .submenu{
     display:block;
 }
@@ -134,25 +136,30 @@ body{
      /*Content*/
 
 .content{
-    font-size: 13px;
-    line-height: 20px;
+    background: url(../img/b.png) repeat-y;
+    float: left;
+    line-height: 23px;
 }
 
 .leftColumn{
     width: 190px;
     float:left;
-    background-color: #edeef0;
-    padding: 10px 20px 20px 20px;
-    height: 440px;
-    border-right: 1px solid #c7cacf;
+    padding: 10px 15px;
+    font-size: 13px
+            
+    
+}
+.centrColumn{
+    float: left;
+    width:500px;
+   
 }
 
 .rightColumn{
     width: 190px;
     float:right;
-    background-color: #edeef0;
-    padding: 10px 20px 20px 20px;
-    border-left: 1px solid #c7cacf;
+   padding: 10px 20px;
+    font-size: 13px
 }
 .content h2{
     font-size: 14px;
