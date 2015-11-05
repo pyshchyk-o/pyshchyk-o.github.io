@@ -11,7 +11,7 @@ body{
     }
     
 .form{
-    width:950px;
+    width:1000px;
     margin: 0 auto;
     background-color: white;
     box-shadow: 0px 0px 25px 0 #5e5757;
@@ -33,7 +33,7 @@ body{
 .contacts{
     width: 150px;
     float:right;
-    margin: 15px 10px 0 0;
+    margin: 15px 20px 0 0;
 }
 .contacts span:first-child{
     font-weight: 600;
@@ -51,17 +51,17 @@ body{
 .logo{
     float: left;
     height: 200px;
-    width: 340px;
+    
 }
 .logo img{
     height: 185px;
-   margin:28px 0 0 30px;
+   margin:28px 0 0 35px;
 }
    /*COUNTRIES MENU*/
 
 .countries{
   float: right;
-    margin: 35px 15px 22px 0;
+    margin: 35px 20px 22px 0;
     }
 .countries ul{
   float: right;
@@ -86,9 +86,7 @@ body{
 .photo img{
     border-bottom:1px solid #128aa7;
     border-top:2px solid #128aa7;
-    width: 950px;
-    height: 200px;
-}
+    }
 
      /*Menu*/
 
@@ -109,7 +107,7 @@ body{
      }
 .menu ul li a{
     display: block;
-    padding: 0 26px;
+    padding: 0 29px;
     text-decoration: none;
     font-size: 14px;
     color: white;
@@ -123,11 +121,13 @@ body{
     background-color: #333333;
     box-shadow: -1px 5px 10px 0 #6e6e6e; 
 }
-
 .menu ul li ul li{
     float: none;
     display:block;
-    line-height: 28px;
+    line-height: 27px;
+}
+.menu ul li ul li a{
+    padding:0 25px;
 }
 .menu ul li:hover .submenu{
     display:block;
@@ -144,22 +144,24 @@ body{
 .leftColumn{
     width: 190px;
     float:left;
-    padding: 10px 15px;
-    font-size: 13px
+    margin-top: 10px;
+    margin-left:20px;
+    font-size: 12px;
             
     
 }
 .centrColumn{
     float: left;
-    width:500px;
+    width:720px;
    
 }
 
 .rightColumn{
     width: 190px;
     float:right;
-   padding: 10px 20px;
-    font-size: 13px
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left:25px;
 }
 .content h2{
     font-size: 14px;
