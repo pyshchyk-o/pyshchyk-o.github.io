@@ -25,60 +25,74 @@ body{
         /*  HEADER*/
 
 .header_menu{
-    text-align: right;
     background-color: #074c89;
     background-image: url(../img/%D0%91%D0%B5%D0%B7%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8-8.png);
    }
-.header_menu ul li{
+.wrapp{
+    float: right;
+    margin-right: 20px;
+}
+.left_side{
+    float: left;
+    margin-right: 20px;
+}
+.left_side li{
     display: inline-block;
     }
-.header_menu ul li a{
+.left_side li a{
+    float: left;
     position: relative;
     display: block;
     text-decoration: none;
     color: #60b5ed;
     padding: 0 20px;
-    line-height: 42px;
+    line-height: 40px;
 }
-
-
-.header_menu ul li a:hover{
+.left_side li a:hover{
     background-color: #4eabda;
     color: #ffffff;
+}
+.img_line:after{
+    content:"";
+    width:1px;
+    height:32px;
+    top:5px;
+    right: -1px;
+    position: absolute;
+    background-color: #60b5ed;
+}
 
-}
-.header_menu ul li:last-child{
-    padding-right: 20px;
-}
-.header_menu li .flag{
-    padding-left: 50px;
-}
-
-.header_menu li .right_side{
+.right_first {
+    float: left;
+    display: block;
+    position: relative;
     color: white;
+    line-height: 42px;
+    text-decoration: none;
+    padding-right: 14px;
+    padding-left: 32px;
+    margin-right: 4px;
 }
-.header_menu li .right_side:hover{
+.right_first:before{
+    content:url(../img/flag.png);
+    position: absolute;
+    top: 7px;
+    left: 3px;
+}
+
+.right_second{
+    float: left;
+    display: block;
+    color: white;
+    line-height: 42px;
+    padding:0 10px 0 10px;
     background: -webkit-linear-gradient(top, rgba(98,192,227,1) 15%,rgba(47,123,197,1) 81%);
 }
-
-     /*Icons*/
-
-.header_menu li a img{
-    position: absolute;
-    display: block;
-    top:6px;
-    right: 0;
-    width:1px;
-    height: 30px;
+.right_second a{
+    color: white;
 }
-
-
-.header_menu li .flag img{  
-    display: block;
-    top:10px;
-    left: 16px;
-    width:21px;
-    height: 23px;
+.right_first:hover{
+    background: -webkit-linear-gradient(top, rgba(98,192,227,1) 15%,rgba(47,123,197,1) 81%);
 }
 
 
@@ -107,7 +121,39 @@ body{
 
 }
 .facebook{
-    padding: 34px 0 20px 0;
+    border-radius: 4px;
+    background: linear-gradient(to bottom, rgba(60,85,152,1) 0%, rgba(60,85,152,1) 12%, rgba(49,71,121,1) 100%);
+    margin:34px 0 31px 0;
+    border-top: 1px solid #7587b7;
+}
+.button_facebook{
+    position: relative;
+    background: url(../img/fb.png) 14px center no-repeat;
+    line-height: 40px;
+    display:block;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    padding-left:14px;
+}
+.button_facebook span{
+    font-weight: bold;
+}
+
+.button_facebook:before{
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 40px;
+    left:42px;
+    background-color: #223c6d;
+    border-right: 1px solid #4c68a9;
+}
+.button_facebook:after{
+    content: url(../img/arrow.png);
+    position: absolute;
+    top: 3px;
+    right: 26px;
 }
 .form_lines{
     width: 100%;
