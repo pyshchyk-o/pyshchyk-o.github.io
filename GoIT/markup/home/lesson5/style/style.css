@@ -91,10 +91,6 @@ body{
 .right_second a{
     color: white;
 }
-.right_first:hover{
-    background: -webkit-linear-gradient(top, rgba(98,192,227,1) 15%,rgba(47,123,197,1) 81%);
-}
-
 
     /*Form*/
 
