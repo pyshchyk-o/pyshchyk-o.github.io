@@ -26,7 +26,7 @@ body{
 
 .header_menu{
     background-color: #074c89;
-    background-image: url(../img/%D0%91%D0%B5%D0%B7%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8-8.png);
+    background-image: url(../img/noize.png);
    }
 .wrapp{
     float: right;
@@ -49,13 +49,14 @@ body{
     line-height: 40px;
 }
 .left_side li a:hover{
+    
     background-color: #4eabda;
     color: #ffffff;
 }
 .img_line:after{
     content:"";
     width:1px;
-    height:32px;
+    height:30px;
     top:5px;
     right: -1px;
     position: absolute;
@@ -67,7 +68,7 @@ body{
     display: block;
     position: relative;
     color: white;
-    line-height: 42px;
+    line-height: 40px;
     text-decoration: none;
     padding-right: 14px;
     padding-left: 32px;
@@ -84,7 +85,7 @@ body{
     float: left;
     display: block;
     color: white;
-    line-height: 42px;
+    line-height: 40px;
     padding:0 10px 0 10px;
     background: -webkit-linear-gradient(top, rgba(98,192,227,1) 15%,rgba(47,123,197,1) 81%);
 }
