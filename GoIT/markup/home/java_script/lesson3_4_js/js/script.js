@@ -45,7 +45,8 @@ var app = {
           inputType: 'checkbox'
         });
 
-        label.insertAdjacentElement('afterBegin', checkbox);
+//        label.insertAdjacentElement('afterBegin', checkbox);
+          label.insertAdjacentHTML('afterBegin', '<input type = "checkbox">');
       }
 
     };
