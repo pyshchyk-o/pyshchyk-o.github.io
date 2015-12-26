@@ -223,6 +223,7 @@ body{
 
 /*----------------------CONTENT-------------------------------*/
 .content{
+    padding-top: 80px;
     background: #f9f9f9;
     border-top:1px solid #12191f;
     border-bottom: 1px solid #e6e6e6;
@@ -234,7 +235,6 @@ body{
     margin: 0 auto;
     box-sizing: border-box;
     padding: 25px 38px 35px;
-    margin-top: 68px;
     background: #fff;
     box-shadow: 0px 1px 1px 0px rgba(239,239,239,1);
 }
@@ -243,7 +243,7 @@ body{
     font-size: 24px;
     color: #000;
 }
-.pink{
+.start_here__header__second{
     color: #edbfff;
 }
 .start_here__paragraph{
@@ -251,11 +251,10 @@ body{
     color: black;
     font-family: "open_sanslight", Arial, Tahoma, sans-serif;
 }
-.starts_here:before{
-    content: url(../img/photo.png);
+.starts_here__img{
     position: absolute;
-    left: -24px;
     top: 17px;
+    left: -24px;
 }
 
 .content_radio{
@@ -290,20 +289,7 @@ body{
     color:#454545;
     line-height: 24px;
 }
-.updates .first:before{
-    content:url(../img/post.png);
-    position: absolute;
-    left: -15px;
-    top: -6px;
-}
-.updates .second:before{
-    content:url(../img/post-copy.png);
-    position: absolute;
-    left: -15px;
-    top: -6px;
-}
-.updates .third:before{
-    content:url(../img/post-copy_2.png);
+.updates__list__img{
     position: absolute;
     left: -15px;
     top: -6px;
@@ -321,15 +307,13 @@ body{
 }
 /*--------------------------LOGOS---------------------------*/
 .logos{
+    padding: 52px 0 15px;
     background: #f9f9f9;
     border-top: 1px solid #fefefe;
     border-bottom: 1px solid #d8d8d8;
     
+    
 }
-.logos_list{
-   margin: 52px 0 15px; 
-}
-
 .logos_img{
     display: inline-block;
     
@@ -426,7 +410,10 @@ footer{
     .start_here__paragraph:after{
         content:'lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”';
     }
-    
+    .start_here__header__first{
+        float: left;
+        margin-right: 8px;
+    }
     .updates_list__subheader:after{
         content:' feugiat eget';
     }
@@ -539,17 +526,16 @@ footer{
     .updates{
         float:left;
         width:41%;
-        margin-top: 80px;
-        margin-left: 7%;
+        margin: 22px 0 0 50px;
     }
     .updates_link{
-        margin-bottom: 0;
-        margin-left: 25%;
+        margin: 0 0 0 25%;
         
     }
     .logos_img{
         width: 11%;
         padding-left: 5%;
+        vertical-align: middle;
     }
     .logos_img a{
         display:block;
@@ -562,7 +548,7 @@ footer{
     }
 /*   --- SLIDER-----*/
     .slider{
-        padding: 100px 0 130px;
+        padding: 100px 0 6%;
     }
     .baner{
         position: relative;
@@ -634,8 +620,10 @@ footer{
         margin: 0 22px 0 50px;
     }
     .main_menu__header{
+        
         float: left;
         margin: 10px 0 0 30px;
+        margin-bottom: 120px;
     }
     .main_menu__header .main_menu{
         float:left;
@@ -644,12 +632,13 @@ footer{
         padding-left: 51px;
     }
     .main_menu__header .main_menu .main_menu__link {
-        margin-bottom: 120px;
+        
         padding-left: 0;
     }
     .main_menu__header .main_menu .main_menu__link:hover{
         border-bottom: 2px solid #edbfff;
-        margin-bottom: 118px;
+        margin-bottom: -2px;
+        
     }
     
 /*    ----BANER----*/
@@ -701,12 +690,9 @@ footer{
     .start_here__header{
         float: left;
     }
-    .pink{
-        padding-left: 7px;
-    }
     .start_here__paragraph{
         float:left;
-        margin-top: 10px;
+        margin-top: 1px;
     }
     .start_here__paragraph:after{
         display:block;
@@ -714,6 +700,9 @@ footer{
 /*    NEW CATEG*/
     .first_header{
         display: none;
+    }
+    .new_categories__header{
+        font-size: 30px;
     }
     .new_categories_first_header{
         display: block;
