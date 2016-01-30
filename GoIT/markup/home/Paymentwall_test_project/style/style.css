@@ -85,7 +85,7 @@ body{
 .pw-header__nav_link:hover{
     color: #929A94;
 }
-#slide-menu{
+.slide-menu{
     display: none;
 }
 .pw-header__help{
