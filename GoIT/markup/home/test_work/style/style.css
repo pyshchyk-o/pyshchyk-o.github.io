@@ -580,6 +580,18 @@ footer{
         padding: 10px 5px;
         font-size: 14px;
     }
+    .submenu{
+    top: 32px;
+    }
+    .submenu-item .sub-item{
+    padding-right: 15px;
+    }
+    .submenu-item .section-item:after{
+    right: 1px;
+    }
+    .sub{
+        left:90px;
+    }
     .section-item:after{
             top: 11px;
             right: -9px;
@@ -649,6 +661,7 @@ footer{
     .nav-mobile .nav-item{
        margin: 0;
     }
+    
     
     .nav-list a{
         padding: 10px 5px;
