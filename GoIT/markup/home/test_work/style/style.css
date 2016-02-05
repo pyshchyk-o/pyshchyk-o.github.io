@@ -534,9 +534,12 @@ footer{
 .mobile-menu{
     display: none;
 }
+
+
+
 /*------------------------MEDIA 768px - 960px-----------------------*/
 
-@media (min-width:480px) and (max-width:768px){
+@media (min-width:481px) and (max-width:768px){
     header{
       padding:15px;
     } 
@@ -625,9 +628,12 @@ footer{
     }
 }
 
+
+
+
 /*------------------------MEDIA 320px - 479px-----------------------*/
 
-@media (min-width:320px) and (max-width:479px){
+@media (min-width:320px) and (max-width:480px){
    .header-nav{
         display:none;
     }
