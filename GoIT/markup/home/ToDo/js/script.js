@@ -37,7 +37,7 @@ $('#toDo input').on('keydown', function(e) {
        for (var i = 0; i < lsLength; i++){
          var key = localStorage.key(i); //Смотрим каждый ключ
          if(key.indexOf(idMask) == 0){
-           $('<li>(i)</li>').addClass('tdItem').attr('id', key).text(localStorage.getItem(key)).appendTo(todoList);
+           $('<li></li>').addClass('tdItem').attr('id', key).text(localStorage.getItem(key)).appendTo(todoList);
          }
        }
      }
