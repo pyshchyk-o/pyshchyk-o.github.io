@@ -82,13 +82,21 @@ header {
   outline: none;
 }
 .share {
-  display: flex;
+    display: flex;
+    color: #185786;
+    padding: 5px;
+    font-size: 15px;
+    align-items: center;
+    border: 1px solid #185786;
+    width: 16%;
+    border-radius: 3px;
+    margin-left: 3%;
 }
 .share-link {
   display: block;
   text-decoration: none;
   color: #AC9797;
-  font-size: 19px;
+  font-size: 24px;
   margin: 6px;
 }
 .icon-vk:hover {
@@ -116,6 +124,7 @@ header {
     align-self: center;
   }
   .share{
+    flex-wrap: wrap;
     margin-bottom: 10px;
     margin-left: 3%;
   }
