@@ -359,28 +359,28 @@ textarea {
   text-align: center;
   font-size: 17px;
   padding: 17px;
-  margin-top: 27px; }
+  margin-top: 27px;
+  z-index: 10;}
   .link_request:hover {
     padding: 20px 17px 20px 17px; }
 
 footer {
   display: flex;
-  position: relative;
   justify-content: space-between;
   align-items: center;
   padding: 40px 3%;
   background: #5b5f5e; }
-
-footer:after{
+  footer nav{
+    z-index: 10;
+  }
+.footer_wrapp{
+  position:relative;
+}
+.footer_wrapp:after{
   content: url(../img/glob.png);
   position:absolute;
-  margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    left: 0;
-    justify-content: center;
-    right: 0;
-    bottom: 0;
+  left: 31%;
+  bottom: 0;
 }
 .menu_footer {
   display: flex;
@@ -431,7 +431,8 @@ footer:after{
   display: flex;
   position: relative;
   overflow: hidden;
-  margin: 0; }
+  margin: 0;
+  z-index: 10;}
 
 .media-nav__link {
   width: 35px;
