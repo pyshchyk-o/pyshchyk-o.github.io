@@ -1,0 +1,125 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?ft2176');
+  src: url('../fonts/icomoon.eot?ft2176#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?ft2176') format('truetype'), url('../fonts/icomoon.woff?ft2176') format('woff'), url('../fonts/icomoon.svg?ft2176#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-search:before {
+  content: "\e901";
+  position: absolute;
+  top: 10px;
+  right: 8%;
+}
+.icon-checkbox-checked:before {
+  content: "\e902";
+}
+.icon-checkbox-unchecked:before {
+  content: "\e903";
+}
+.icon-facebook2:before {
+  content: "\e914";
+}
+.icon-instagram:before {
+  content: "\e906";
+}
+.icon-twitter:before {
+  content: "\e908";
+}
+.icon-vk:before {
+  content: "\e915";
+}
+body {
+  background: #fff;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  padding: 16px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 980px;
+  margin: 0 auto;
+}
+.nav{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+.nav__header{
+    list-style: none;
+    display: flex;
+}
+.nav__link{
+   text-decoration: none;
+    margin-right: 15px;
+    font-size: 13px;
+    line-height: 17px;
+    color: #185786;
+}
+.search-box {
+  position: relative;
+}
+.search {
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 24px;
+  border: 1px solid grey;
+  outline: none;
+}
+.share {
+  display: flex;
+}
+.share-link {
+  display: block;
+  text-decoration: none;
+  color: #AC9797;
+  font-size: 19px;
+  margin: 6px;
+}
+.icon-vk:hover {
+  color:#66869F;
+  transition: all 0.2s;
+}
+.icon-facebook2:hover{
+  color:#3F51B5;
+  transition: all 0.2s;
+}
+.icon-twitter:hover{
+  color:#3DF8EF;
+  transition: all 0.2s;
+}
+@media all and (max-width: 739px){
+  header{
+    width:100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .logo{
+    margin-left: 42%;
+  }
+  .nav{
+    align-self: center;
+  }
+  .share{
+    margin-bottom: 10px;
+    margin-left: 3%;
+  }
+  .search-box{
+   margin-left: 3%;
+  }
+}
