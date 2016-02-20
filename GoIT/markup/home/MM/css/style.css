@@ -148,7 +148,7 @@ video{
     height: 54px;
     padding-left: 3%;
 }
-.carousel-element img{
+.carousel-img{
   width: 148px;
   height: 84px;
 }
@@ -298,11 +298,35 @@ video{
   .content-header:after{
     display:none;
   }
+  .carousel-element{
+    flex-direction: column;
+    margin-left: 0;
+    margin-left: 5vmin;
+  }
+  .carousel-img{
+    height: auto;
+    display: block;
+    width: 59%;
+  }
+  .carousel-arrow-right{
+    padding-right: 5%;
+  }
+  .goals-content{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .goals-content__item{
+    flex-basis: 250px;
+    margin: 10px;
+  }
  .user-data{
     width: 50%;
     margin: 6px auto;
   }
   .data{
     flex-direction: column;
+  }
+  .btn-play{
+        margin-left: -31px;
   }
 }
