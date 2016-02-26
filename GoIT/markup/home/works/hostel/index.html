@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Hostel</title>
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
     <link href="css/normalise.css" rel="stylesheet">
     <link href="css/carousel.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -32,9 +33,19 @@
              <li class="menu__list"><a href="#" class="menu__item">Контакты</a></li>
            </ul>
           </nav>
+          <div class="header-menu"></div>
         </header>
   </div>
-
+  <div class="mobile-menu">
+    <ul class="mobile-nav">
+      <li class="nav__list"><a class="list_item_nav" href="#">Номера и цены</a></li>
+      <li class="nav__list"><a class="list_item_nav"  href="#">Дополнительные услуги</a></li>
+      <li class="nav__list"><a class="list_item_nav"  href="#">Что мы предлагаем</a></li>
+      <li class="nav__list"><a class="list_item_nav"  href="#">Отзывы</a></li>
+      <li class="nav__list"><a class="list_item_nav"  href="#">Рядом с нами</a></li>
+      <li class="nav__list"><a class="list_item_nav"  href="#">Как добраться</a></li>
+    </ul>
+  </div>
 
     <section class="banner">
         <div class="wrapper clearfix">
@@ -46,7 +57,7 @@
       <div class="booking-call">
         <p class="booking-call__number">+38 (044) <b>123-45-67</b></p>
         <p class="booking-call__number">+38 (096) <b>123-45-67</b></p>
-        <button class="booking-call__btn" type="button" name="call">Заказать звонок</button>
+        <button id="call" class="booking-call__btn" type="button" name="call">Заказать звонок</button>
       </div>
         </div>
     </section>
@@ -69,6 +80,15 @@
         <p class="booking-call__number booking-call__number_second">+38 (096) 123-45-67</p>
       </div>
           <button class="booking-call__btn booking-call__btn_second" type="button" name="call">Заказать звонок</button>
+          <div class="form-box form-box_pop-up">
+            <div class="pop-up_close"></div>
+            <form action="">
+              <h4 class="header-form">или Оставьте заявку,<br>мы свяжемся с Вами</h4>
+              <i class="user-name"><input class="data" type="text" name="name" placeholder="Ваше имя"></i>
+              <i class="u-phone"><input class="data data_phone" type="text" name="phone" placeholder="+38 (0____) ___ - ___ - ___"></i>
+            </form>
+            <button class="btn-book btn-book_main btn-send" type="button" name="send">Отправить</button>
+          </div>
         </div>
     </section>
 
@@ -250,9 +270,9 @@
           </form>
           <button class="btn-book btn-book_main btn-send" type="button" name="send">Отправить</button>
         </div>
+        <p class="creator">Создание и продвижение BUSINESS<span>SITE</span></p>
      </div>
    </footer>
-
 
 <script src="js/script.js"></script>
 <script src="js/tabs.js"></script>

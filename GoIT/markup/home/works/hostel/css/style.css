@@ -48,7 +48,7 @@ nav{
   margin-right: 8px;
 }
 .menu__item:hover{
-  background: #fff;
+  color: #58c7f2;
 }
 
 /*FIRST SECTION - BANNER*/
@@ -134,7 +134,8 @@ nav{
   padding-bottom: 20px;
 }
 .menu__item_second:hover{
-  background-color: rgba(0, 0, 0, 0.3);;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #000;
 }
 .numbers{
   float: left;
@@ -526,8 +527,32 @@ form{
   padding: 21px 26% 17px;
   margin: 22px 4% 10px 0;
 }
-
-
+.creator{
+    float: right;
+    font-size: 14px;
+    margin:29px 17% 0 0;
+}
+.creator span{
+  color: #ee4848;
+}
+.mobile-menu{
+  display:none;
+}
+.form-box_pop-up{
+  display: none;
+  position:absolute;
+  top: 55px;
+  left: 35%;
+}
+.pop-up_close{
+  position: absolute;
+background: url(../img/close.png) no-repeat;
+width: 38px;
+height: 30px;
+right: -3%;
+top: 10px;
+cursor: pointer;
+}
 /*MEDIA MAX-960px*/
 @media (max-width:960px){
   .wrapper{
@@ -541,7 +566,7 @@ form{
     width: 100%;
   }
   .booking-call__number{
-    font-size: 21px;
+    font-size: 19px;
   }
   .menu_second{
     width: 62%;
@@ -623,9 +648,61 @@ form{
   nav,
   .menu_second,
   .booking-call,
-  .form-box{
+  .form-box,
+  .lng{
     display: none;
   }
+
+  .mobile-menu{
+    display:block;
+  }
+  .mobile-menu{
+        position: absolute;
+        right: -500px;
+        text-align: right;
+        background-color: #f6f6f6;
+        width: 39%;
+        min-width: 160px;
+        box-sizing: border-box;
+        padding-right: 20px;
+        height:200vmin;
+        z-index: 1000;
+        transition: all 400ms;
+  }
+  .mobile-menu_active{
+      right: 0;
+      transition: all 400ms;
+  }
+  .header-menu{
+  float: right;
+  width: 38px;
+  height: 36px;
+  margin:10px 4% 0 0;
+  background-image: url(../img/menu.png);
+  border-radius: 5px;
+  background-color: #A88B8B;
+  background-size: 25px 22px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  -moz-transition: all 300ms;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+  }
+  .header-menu_close{
+  width: 38px;
+  background-image: url(../img/close.png);
+  }
+  .list_item_nav{
+    text-decoration: none;
+    display: block;
+    text-decoration: none;
+    color: #494949;
+    padding: 10px 0 10px;
+    border-bottom: 2px solid #333;
+  }
+
+
   .booking{
   width:100%;
   }
