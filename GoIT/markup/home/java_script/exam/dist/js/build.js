@@ -44,6 +44,9 @@ $(document).ready( function() {
    function imgRender(img) {
 
    			$.ajax({
+          type: "GET",
+				  dataType: "json",
+				  cache: false,
    				url: 'http://api.pixplorer.co.uk/image?word=' + img + '&amount=7&size=m',
    				success: function(data) {
    					console.log(data);
