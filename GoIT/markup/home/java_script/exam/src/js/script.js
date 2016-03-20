@@ -1,13 +1,29 @@
 $(document).ready( function() {
-
+jQuery.support.cors = true;
    // SLIDER
   $('.flexslider').flexslider({
      animation: "slide"
    });
   // Renderingimage for Isotop
+  jQuery.ajaxSetup({
+              xhr: function() {
+                      //return new window.XMLHttpRequest();
+                      try{
+                          if(window.ActiveXObject)
+                              return new window.ActiveXObject("Microsoft.XMLHTTP");
+                      } catch(e) { }
+
+                      return new window.XMLHttpRequest();
+                  }
+          });
+
+
    function imgRender(img) {
 
    			$.ajax({
+          type: "GET",
+				  dataType: "json",
+				  cache: false,
    				url: 'http://api.pixplorer.co.uk/image?word=' + img + '&amount=7&size=m',
    				success: function(data) {
    					console.log(data);
