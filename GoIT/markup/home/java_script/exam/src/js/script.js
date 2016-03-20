@@ -26,7 +26,7 @@ jQuery.support.cors = true;
 				  cache: false,
    				url: 'http://api.pixplorer.co.uk/image?word=' + img + '&amount=7&size=m',
    				success: function(data) {
-   					console.log(data);
+   				// 	console.log(data);
    					var html = tmpl($('#grid-template').html(), data);
             $('.grid').remove();
 
