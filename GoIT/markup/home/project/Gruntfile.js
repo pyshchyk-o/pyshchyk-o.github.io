@@ -51,7 +51,7 @@ module.exports = function(grunt) {
           files: 'src/sass/*.scss',
 	        tasks: ['sass']
 	    	},
-        mincss :{
+        mincss:{
           files: 'dist/css/main.css',
           tasks: ['cssmin']
         },
@@ -66,8 +66,8 @@ module.exports = function(grunt) {
   // grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-contrib-cssmin');
+  grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
 
   // Default task(s).
