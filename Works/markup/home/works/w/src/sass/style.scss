@@ -1,0 +1,197 @@
+@import "fonts";
+@import "variables";
+body {
+  font-family: 'robotolight', Arial, sans-serif;
+  background: #fff;
+}
+.wrapper {
+  min-width: 320px;
+  max-width: 749px;
+  margin: 0 auto;
+}
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+// Header
+header {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  align-items: center;
+  background-color: rgba(38, 64, 79, 0.8);
+}
+.wrapper--first-block{
+  background: url(../img/bgpic.jpg);
+  background-size: cover;
+  padding-bottom: 73px;
+}
+.logo {
+  font-weight: bold;
+  color: #fff;
+  font-size: 32px;
+}
+.nav{
+  position:relative;
+  background-color: #2b4f69;
+  padding: 10px 16px;
+  border: 2px solid #99a0a6;
+  border-radius: 4px;
+  box-shadow: 4px 5px 17px 0px rgba(0,0,0,0.75);
+}
+.menu{
+  &__link{
+    text-decoration: none;
+    color: #fff;
+    padding: 8px;
+    display: block;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #24659f;
+    &:hover{
+      background: #1c3d5c;
+      transition: 0.3s;
+    }
+  }
+}
+.min-menu{
+    position: absolute;
+    background: $blueCol;
+    z-index: 10;
+    text-align: center;
+    top: 49px;
+    right: -2px;
+    width: 164%;
+    box-shadow: 3px 0px 17px 0px rgba(82,71,82,1);
+}
+.min-menu{
+    overflow:hidden;
+    height:0;
+    transition:height 0.4s ease-in;
+}
+.nav:hover .min-menu {
+    height:auto;
+    transition:height 0.4s ease-in;
+}
+
+
+.enter-btn{
+  display:inline-block;
+  color: #fff;
+  padding: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+}
+.ion-android-lock:before {
+    content: "\f392";
+    margin-right: 5px;
+}
+.ion-ios-people:before {
+    content: "\f47c";
+    margin-right: 5px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+  span{
+    margin-left: 5px;
+    font-size: 22px;
+    font-weight: bold;
+   letter-spacing: 0.5px;
+  }
+}
+// PRE-HEADER
+.pre-header{
+  background-color: rgba(46, 123, 193, 0.6);
+  width: 80%;
+  margin: 44px auto 0;
+  border: 14px solid rgba(255,255,255,0.3);
+  border-radius: 11px;
+  padding: 18px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.input-wrapp{
+    width: 88%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    max-width: 350px;
+    input{
+      width: 90%;
+      color: $fontColor;
+      padding: 10px 10px 10px 22px;
+      border: 4px solid #ccc;
+      border-radius: 4px;
+      box-shadow: inset 1px 1px 9px 0 rgba(124,124,124,.75);
+    }
+   &--city{
+     margin-bottom: 9px;
+   }
+   &--excursion{
+     input{
+        padding-right: 30px;
+     }
+   }
+}
+.ion-android-pin:before {
+    content: "\f3a3";
+    position: absolute;
+    color: $blueCol;
+    top: 11px;
+    left: 8px;
+    font-size: 19px;
+  }
+.ion-chevron-down:before {
+      content: "\f123";
+      position: absolute;
+      right: 14px;
+      top: 13px;
+      color: $blueCol;
+      font-size: 19px;
+      cursor: pointer;
+  }
+
+.chosen{
+  color: #fff;
+  font-size: 18px;
+  margin-top: 9px;
+  width: 88%;
+  max-width: 350px;
+}
+.ion-ios-heart:before{
+    content: "\f443";
+    font-size: 20px;
+    margin-right: 8px;
+    cursor: pointer;
+  }
+.ion-ios-heart:hover:before{
+    color: #FF7171;
+    transition: 0.3s;
+  }
+.search{
+  background: $fontColor;
+  border: none;
+  padding: 7px 15px;
+  color: #fff;
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  margin-top: 14px;
+  box-shadow: 4px 5px 11px 0 rgba(0,0,0,.75);
+  cursor: pointer;
+}
+.ion-search:before {
+    content: "\f21f";
+    margin-right: 5px;
+}
+@media all and (min-width: 749px) {}

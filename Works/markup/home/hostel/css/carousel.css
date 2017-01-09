@@ -1,0 +1,58 @@
+.wrap_jcarousel{
+  width: 87%;
+  margin: 27px auto;
+  position: relative;
+  float: left;
+}
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+}
+.jcarousel ul {
+    width: 20000em;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.jcarousel li {
+    float: left;
+    width: 497px;
+}
+.jcarousel li:first-child{
+      margin-left: 105px;
+}
+.slider-img{
+    display: block;
+    float: left;
+    margin-left: 2%;
+}
+.user_name{
+  float: left;
+  font-size: 14px;
+  font-weight: bold;
+  margin-left: 4%;
+  margin-top: 47px;
+}
+.user_rewiev{
+  font-size: 14px;
+  width: 91%;
+  margin-top: 26px;
+  line-height: 24px;
+}
+.jcarousel-prev,
+.jcarousel-next{
+    position: absolute;
+    top: 162px;
+    width: 30px;
+    height: 30px;
+    background: url(../img/arrows.png) 0 0 no-repeat;
+}
+.jcarousel-next{
+    right: -12%;
+    background-position: -21px 0;
+}
+.inactive{
+    cursor: default;
+    opacity: 0.2;
+  }

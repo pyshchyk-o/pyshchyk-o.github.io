@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+   <meta charset="utf-8">
+   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson 11-12</title>
+  
+</head>
+    <body>
+    <div class="wrapper clearfix">
+    <div class="my-carousel">
+    <div class="carousel-arrow-left">&#8249;</div>
+    <div class="carousel-hider">
+         <ul class="carousel-list">
+            <li class="carousel-element"><img src="img/img1.jpg"><p>Paris</p></li>
+            <li class="carousel-element"><img src="img/img2.jpg"><p>Etno</p></li>
+            <li class="carousel-element"><img src="img/img3.jpg"><p>Mountains</p></li>
+            <li class="carousel-element"><img src="img/img4.jpg"><p>Car</p></li>
+            <li class="carousel-element"><img src="img/img5.jpg"><p>Flauers</p></li>
+            <li class="carousel-element"><img src="img/img6.jpg"><p>Hause</p></li>
+        </ul>
+</div>
+
+<div class="carousel-arrow-right">&#8250;</div>
+</div>
+</div>
+
+<button type="button" class="profile_button">Show my profile</button>
+
+<script type="text/html" id="user_tmpl">
+  <% for ( var i = 0; i < data.length; i++ ) { %>
+    <div class="<%= data[i].div_class %>">
+    <h2><%= data[i].name %></h2>
+    <img class="prof-img" src="<%= data[i].img %>">
+    <p><%= data[i].uni %></p>
+    <p><%= data[i].goal %></p>
+    <ul class="<%= data[i].ul_class %>">
+               <li><%= data[i].first_goal %></li>
+               <li><%= data[i].second_goal %></li>
+    </ul>
+     <p><%= data[i].phone %></p>
+     <p><%= data[i].facebook %></p>
+     <a> <%= data[i].link %></a>
+     <p><%= data[i].feedback %></p>
+     </div>
+  <% } %>
+</script>
+
+<script type="text/javascript" src="js/script.js"></script>
+<script type="text/javascript" src="js/carousel.js"></script>
+<script type="text/javascript" src="js/tmpl.js"></script>
+<script type="text/javascript" src="js/tmpl_script.js"></script>
+
+</body>
+
+
+    
+

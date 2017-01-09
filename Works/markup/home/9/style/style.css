@@ -1,0 +1,755 @@
+@font-face {
+    font-family: 'league_gothicregular';
+    src: url('../font/league-gothic.regular-webfont.eot');
+    src: url('../font/league-gothic.regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/league-gothic.regular-webfont.woff2') format('woff2'),
+         url('../font/league-gothic.regular-webfont.woff') format('woff'),
+         url('../font/league-gothic.regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('../font/opensans-light-webfont.eot');
+    src: url('../font/opensans-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/opensans-light-webfont.woff2') format('woff2'),
+         url('../font/opensans-light-webfont.woff') format('woff'),
+         url('../font/opensans-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'open_sansextrabold';
+    src: url('../font/opensans-extrabold-webfont.eot');
+    src: url('../font/opensans-extrabold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/opensans-extrabold-webfont.woff2') format('woff2'),
+         url('../font/opensans-extrabold-webfont.woff') format('woff'),
+         url('../font/opensans-extrabold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+body{
+    font-family:"league_gothicregular", Arial, Verdana, sans-serif; 
+    font: 100%/1.5em;
+    background-color: white;
+}
+.wrapp{
+    min-width: 320px;
+    max-width: 480px;
+    margin: 0 auto;
+}
+.clearfix:after{
+    content:"";
+    display: block;
+    clear: both;
+}
+
+          /*------------------------HEADER----------------------*/
+.main_menu__header{
+    display: none;
+}
+.header{
+    padding-top: 70px;
+    background: url(../img/bg.jpg) top center no-repeat;
+    border-bottom: 1px solid #34263b;
+}
+.logo{
+    display:block;
+    text-align: center;
+    
+}
+.header-menu{
+    max-width: 200px;
+    margin: 38px auto 0;
+    text-align:center;
+}
+.menu-active__list{
+    position: relative;
+    display:block;
+}
+.menu-active{
+    position: relative;
+    padding-bottom: 8px;
+    font-size: 24px;
+    line-height: 24px;
+    color:#fff;
+    text-transform: uppercase;
+    border-bottom: 2px solid #edbfff;
+    cursor: pointer;
+}
+.menu-list{
+    display:none;
+    z-index: 1;
+    position: absolute;
+    top: -9px;
+    left: 30px;
+    background: rgba(72, 59, 78, 0.9);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#483b4e', endColorstr='#483b4e', GradientType=1 );
+    background: -moz-linear-gradient(left, rgba(72,59,78,0.83) 0%, rgba(72,59,78,0.83) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(72,59,78,0.83)), color-stop(100%, rgba(72,59,78,0.83)));
+background: -webkit-linear-gradient(left, rgba(72,59,78,0.83) 0%, rgba(72,59,78,0.83) 100%);
+background: -o-linear-gradient(left, rgba(72,59,78,0.83) 0%, rgba(72,59,78,0.83) 100%);
+background: -ms-linear-gradient(left, rgba(72,59,78,0.83) 0%, rgba(72,59,78,0.83) 100%);
+    border-radius: 9px;
+    border:1px solid #131d23;
+}
+.menu__item{
+    position: relative;
+    z-index: 1;
+    display:block;
+    padding: 8px 15px 10px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    border-top: 1px solid #523e5a;
+    border-bottom: 1px solid #35273d;
+    cursor: pointer;
+}
+.menu__item:nth-child(1){
+    border-top: none;
+    border-radius: 5px 5px 0 0;
+}
+.menu__item:last-child{
+    border-bottom: none;
+    border-radius: 0 0 5px 5px;
+}
+.menu__item .active{
+    border-bottom: 2px solid #edbfff;
+}
+.menu__item a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu__item:hover{
+    background: rgba(47, 38, 52, 0.9);
+    border-bottom: 2px solid #edbfff;
+    padding-bottom: 9px;   
+}
+.menu-active__list:hover .menu-list{
+    display: block;
+}
+.slider__iphone{
+    display: none;
+}
+.slider{
+    margin-top: 122px;
+    text-align: center;
+}
+.arrow_left:after{
+    content: url(../img/arrow-left.png);
+    position: absolute;
+    cursor: pointer;
+    top: 9px;
+    left: 14px;
+}
+    .baner{
+        position: relative;
+        text-align: center;
+    }
+    .baner_header{
+        font-size: 36px;
+        color: #fff;
+    }
+    .baner_subheader{
+        line-height: 22px;
+        font-size: 18px;
+        color:#d5ace5;
+        padding-left: 5%;
+    }
+    .banner_paragraph{
+        display:none;
+    }
+.baner__iphone{
+    display:none;
+}
+.arrow_right:after{
+    content: url(../img/arrow-right.png);
+    position: absolute;
+    cursor: pointer;
+    right:14px;
+    top: 9px;
+}
+.header_slider{
+    text-align: center;
+    margin: 80px 0 67px;
+}
+
+   /*-----------------------------ABOUT------------------------------*/
+
+.about{
+    padding: 42px 0 65px 0;
+    background: linear-gradient(to bottom, rgba(118,82,131,1) 0%, rgba(118,82,131,1) 42%, rgba(56,42,63,1) 100%); 
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#765283', endColorstr='#372b3f',GradientType=0 );
+    background: -moz-linear-gradient(top, rgba(118,82,131,1) 10%, rgba(118,82,131,1) 10%, rgba(55,43,63,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(118,82,131,1) 10%,rgba(118,82,131,1) 10%,rgba(55,43,63,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: -o-linear-gradient(top, rgba(118,83,131,1) 0%, rgba(118,82,131,1) 42%, rgba(56,42,63,1) 100%);
+    border-bottom: 1px solid #21333b;
+}
+.about_company{
+    position:relative;
+    width: 65%;
+    margin: 28px auto 0;
+}
+.about_company__header{
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 12px;
+    font-size: 24px;
+}
+.about_company__paragraph{
+    line-height: 23px;
+    color: white;
+    font-family: "open_sanslight", Arial, Tahoma, sans-serif;
+}
+.about_company:before{
+    content: url(../img/key.png);
+    position: absolute;
+    left: -44px;
+    top: 4px;
+}
+.about_company__link{
+    display: block;
+    text-decoration: none;
+    margin-top: 22px;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #fff;
+    text-align: right;
+}
+.about_company__link:hover{
+    text-shadow: 0px 0px 15px rgba(255, 255, 255, 1);
+}
+.slider_nav__copy{
+    margin: 22px 0 50px 0;
+}
+
+
+
+/*----------------------CONTENT-------------------------------*/
+.content{
+    padding-top: 80px;
+    background: #f9f9f9;
+    border-top:1px solid #12191f;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.starts_here{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 25px 38px 35px;
+    background: #fff;
+    box-shadow: 0px 1px 1px 0px rgba(239,239,239,1);
+}
+.start_here__header{
+    text-transform: uppercase;
+    font-size: 24px;
+    color: #000;
+}
+.start_here__header__second{
+    color: #edbfff;
+}
+.start_here__paragraph{
+    line-height: 23px;
+    color: black;
+    font-family: "open_sanslight", Arial, Tahoma, sans-serif;
+}
+.starts_here__img{
+    position: absolute;
+    top: 17px;
+    left: -24px;
+}
+
+.content_radio{
+    padding-bottom:0;
+    text-align: center;
+    margin: 21px 0 49px 0;
+}
+/*------updates------*/
+.updates{
+    position:relative;
+    width: 90%;
+    margin-left: 10%;
+}
+.updates__header{
+    font-size: 30px;
+    text-transform: uppercase;
+    margin:0 0 26px 8px;
+    color:#454545;
+}
+.updates__list{
+    position: relative;
+/*    width: 70%;*/
+    margin: 26px auto 0;
+    padding-left: 50px;
+}
+.updates_list__subheader{
+    font-family: "open_sansextrabold", Arial, Tahoma, sans-serif;
+    color:#454545;
+}
+.updates_list__paragraph{
+    font-family: "open_sanslight", Arial, Tahoma, sans-serif;
+    color:#454545;
+    line-height: 24px;
+}
+.updates__list__img{
+    position: absolute;
+    left: -15px;
+    top: -6px;
+}
+.updates_link{
+    display:block;
+    margin: 26px 0 91px;
+    width: 70%;
+    margin-left: 20%;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+    color:#5e5e5e;
+}
+/*--------------------------LOGOS---------------------------*/
+.logos{
+    padding: 52px 0 15px;
+    background: #f9f9f9;
+    border-top: 1px solid #fefefe;
+    border-bottom: 1px solid #d8d8d8;
+    
+    
+}
+.logos_img{
+    display: inline-block;
+    
+    text-align: center;
+    padding-left: 12%;
+    padding-bottom: 60px;
+}
+.logos_img a{
+    display:block;
+    width: 87px;
+}
+.new_categories__box{
+    display:none;
+}
+
+/*----------------------------------FOOTER----------------------------------*/
+
+.footer_menu{
+    display: none;
+}
+.footer_wrapp{
+    background: url(../img/footer-back.jpg) bottom center no-repeat;
+    text-align: center;
+    box-shadow: inset 0px 2px 5px 0px rgba(69,67,69,1);
+}
+.footer{
+    display:block;
+    padding: 41px 0 60px 0;
+    font-size: 12px;
+    font-family: "open_sanslight", Arial, Tahoma, sans-serif;
+    color:#fff;
+    
+}
+.footer span{
+    font-family: "open_sansextrabold", Arial, Tahoma, sans-serif;
+}
+.main_menu__box{
+    display:none;
+}
+/*------------------------MEDIA 480px - 768px-----------------------*/
+
+@media (min-width:481px){
+    .wrapp{
+        min-width: 481px;
+    }
+    .main_menu__header{
+        display: none;
+    }
+    .menu__item{
+        padding-left:68px;
+        padding-right:68px;
+    }
+    .menu-list{
+        width: 241px;
+        left:-20px;
+    }
+    .slider__img{
+        position: relative;
+        margin-right: 170px;
+    }
+    .slider__iphone{
+    position: absolute;
+    display:block;
+    width: 179px;
+    height: 268px;
+    top: -93px;
+    left: 260px;
+    }
+    
+    
+    .slider{
+        background: rgba(0, 0, 0, 0.3);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=1 );
+        margin-top: 37px;
+        padding: 83px 0 75px;
+    }
+    .header_slider{
+        margin-top:21px;
+    }
+
+    .baner{
+        text-align: left;
+        padding-left: 50px;
+    }
+    .baner_subheader{
+        padding-left: 0;
+    }
+    
+    .about_company{
+        width: 85%;
+    }
+    .about_company__paragraph:after{
+        content:'ere. Pellentesque vel lacus eget nisi convallis auctor. Nam vitae lectus eu';
+    }
+    .start_here__paragraph:after{
+        content:'lectus eu libero pellentesque pulvinar urna risus, mattis pulvinar bibendum in, venenatis quis neque. Mauris nec metus ultricies erat consequat dignissim non eu nisl.”';
+    }
+    .start_here__header__first{
+        float: left;
+        margin-right: 8px;
+    }
+    .updates_list__subheader:after{
+        content:' feugiat eget';
+    }
+    .updates_link{
+        margin-left: 4%;
+    }
+    .updates_list__paragraph:after{
+        content:' 2012';
+    }
+    
+    
+    .logos_img{
+        width: 18%;
+        padding-bottom: 27px;
+        padding-left: 10%;
+    }
+    
+/*    -------------NEW CATEGORIES-------*/
+    .new_categories__box{
+    display:block;
+    background: #ecece6;
+    padding: 51px 0 91px;
+}
+    .new_categories{
+    width: 93%;
+    margin: 0 auto ;
+    padding-top: 28px;
+    }
+    .new_categories__header{
+    text-transform: uppercase;
+    color: #454545;
+    margin-bottom: 12px;
+    font-size: 24px;
+    }
+    .new_categories__paragraph{
+    line-height: 23px;
+    color: #787878;
+    font-family: "open_sanslight", Arial, Tahoma, sans-serif;
+    }
+    .new_categories_first_header{
+        display:none;
+    }
+    .new_categories__subheader{
+        display: none;
+    }
+/*  -----  FOOTER MENU------*/
+    
+   .main_menu__box{
+        display: block;
+        padding-top: 47px;
+     }
+    .main_menu__item{
+        display: inline-block;
+    }
+    .main_menu__link{
+        display: block;
+        text-decoration: none;
+        font-size: 20px;
+        color:#fff;
+        padding-left: 22px;
+        text-transform: uppercase;
+    }
+}
+       /*------------------------MEDIA 768px - 960px-----------------------*/
+
+@media (min-width:768px){
+    .wrapp{
+        min-width: 768px;
+    }
+    .header-menu{
+        display:none;
+    }
+    .main_menu__header{
+        display: block;
+        margin: 38px 0 79px;
+    }
+ .main_menu__header .main_menu .main_menu__link{
+        font-size: 24px;
+        padding-left: 51px;
+    }
+  .main_menu .main_menu__item .main_menu__first_link{
+        padding-left: 21px;
+    }
+    .logo{
+        text-align: left;
+        margin-left: 3%;
+    }
+    .about_company{
+        width: 24%;
+        margin-left:9%;
+        display: block;
+        float: left;
+    }
+    .about_company__link{
+        margin-right: 15%;
+    }
+    
+    
+    .coment{
+    display: block;
+    width: 49%;
+    float: left;
+    }
+    .starts_here{
+        width: 82%;
+    }
+    .start_here__paragraph:after{
+        display:none;
+    }
+    .updates{
+        float:left;
+        width:41%;
+        margin: 22px 0 0 50px;
+    }
+    .updates_link{
+        margin: 0 0 0 25%;
+        
+    }
+    .logos_img{
+        width: 11%;
+        padding-left: 5%;
+        vertical-align: middle;
+    }
+    .logos_img a{
+        display:block;
+        }
+    
+    .new_categories{
+     width: 28%;
+     float: left;
+     padding-left: 5%;
+    }
+/*   --- SLIDER-----*/
+    .slider{
+        padding: 100px 0 6%;
+    }
+    .baner{
+        position: relative;
+        width: 40%;
+        padding-right: 58%;
+       
+    }
+    .baner_header{
+        font-size: 48px;
+        color: #fff;
+    }
+    .baner_subheader{
+        line-height: 35px;
+        font-size: 24px;
+        color:#d5ace5;
+    }
+
+    .banner_paragraph{
+        display: block;
+        line-height: 24px;
+        color:#eae9eb;
+        font-family: "open_sanslight", Arial, Tahoma, sans-serif;
+    }
+    .slider__iphone{
+        display:none;
+    }
+    .baner__iphone{
+        display:block;
+        position: absolute;
+        top: -123px;
+        right: 64px;
+    }
+    .arrow_left:after,
+    .arrow_right:after{
+      top: 78px;
+    }
+
+/*   --- SLIDERT-END---*/
+    .new_categories_first_header{
+        display:none;
+    }
+    .new_categories__subheader{
+        display: none;
+    }
+    
+    .main_menu__box{
+        text-align: left;
+    }
+    .main_menu__item .main_menu__link{
+    font-size: 20px;
+    padding-left: 44px;
+    }
+    
+    .footer{
+        text-align: right;
+        margin-right: 2%;
+    }
+}
+
+/*------------------------MEDIA 960px + -----------------------*/
+
+@media (min-width:960px){
+    .wrapp{
+        min-width: 960px;
+    }
+    /*   ---- HEADER -----*/
+    .logo{
+        float:left;
+        margin: 0 22px 0 50px;
+    }
+    .main_menu__header{
+        
+        float: left;
+        margin: 10px 0 0 30px;
+        margin-bottom: 120px;
+    }
+    .main_menu__header .main_menu{
+        float:left;
+    }
+    .main_menu__header .main_menu__item{
+        padding-left: 51px;
+    }
+    .main_menu__header .main_menu .main_menu__link {
+        
+        padding-left: 0;
+    }
+    .main_menu__header .main_menu .main_menu__link:hover{
+        border-bottom: 2px solid #edbfff;
+        margin-bottom: -2px;
+        
+    }
+    
+/*    ----BANER----*/
+    .arrow_left:after{
+        left: 1%;
+    }
+    .arrow_right:after{
+        right: 9%;
+    }
+    .baner{
+        width: 51%;
+        padding-left:50px;
+        padding-right: 52%;
+    }
+    .baner_subheader:after{
+        content:' True';
+        text-transform: uppercase;
+    }
+    .baner_header{
+        font-size: 60px;
+    }
+    .baner_subheader{
+        font-size: 32px;
+    }
+    .banner_paragraph{
+        font-size: 18px;
+    }
+    .banner_paragraph:after{
+       content:'at volutpat. Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis, euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.'
+     }
+    .baner__iphone{
+        right: 153px;
+    }
+/*  --  ABOUT----*/
+    
+    .cloud:before{
+        content: url(../img/cloud.png);
+        position: absolute;
+    }
+    .melody:before{
+        content: url(../img/melody.png);
+        position: absolute;
+    }
+/*   ----- COMENT ---*/
+    .starts_here{
+        background: url(../img/cloud-comment.png);
+        box-shadow: none;
+    }
+    .start_here__header{
+        float: left;
+    }
+    .start_here__paragraph{
+        float:left;
+        margin-top: 1px;
+    }
+    .start_here__paragraph:after{
+        display:block;
+    }
+/*    NEW CATEG*/
+    .first_header{
+        display: none;
+    }
+    .new_categories__header{
+        font-size: 30px;
+    }
+    .new_categories_first_header{
+        display: block;
+        font-size: 48px;
+        text-transform: uppercase;
+        color: #454545;
+    }
+    .new_categories_first_header:after{
+        content:'er';
+        color: #b9b9b9;
+    }
+    .new_categories__subheader{
+        display:block;
+        font-style: italic;
+        color: #c5c5c5;
+        line-height: 35px;
+        font-family: "open_sanslight", Arial, Tahoma, sans-serif;
+    }
+    .textless{
+        display:none;
+    }
+    
+/*    FOOTER*/
+    .main_menu__box{
+        float:left;
+    }
+    .footer{
+        float:right;
+        padding-top: 47px;
+    }
+}
+    
+    
+    
+    
+    
+    
+    
+    

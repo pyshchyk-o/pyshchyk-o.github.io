@@ -1,0 +1,20 @@
+body{
+    background-color: #B5761B;
+}
+label{
+    display: block;
+}
+.header{
+    color: #5C491A;
+    font-weight: bold;
+    margin-left: 20px;
+}
+form{
+    margin-left: 30px;
+}
+input[type="checkbox"]{
+    margin: 4px 7px 0;
+}
+.btn{
+    margin:20px;
+}
